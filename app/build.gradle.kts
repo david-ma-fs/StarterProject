@@ -70,7 +70,6 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.retrofit.gson)
     implementation(libs.coil)
-    implementation(libs.coil.okhttp)
 
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)

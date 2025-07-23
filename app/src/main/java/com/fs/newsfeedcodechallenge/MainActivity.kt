@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import coil.compose.AsyncImage
 import com.fs.newsfeedcodechallenge.ui.theme.NewsFeedCodechallengeTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,8 +20,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             NewsFeedCodechallengeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Box(modifier = Modifier.padding(innerPadding)) {
-
+                    Box(modifier = Modifier
+                        .padding(innerPadding)
+                        .fillMaxSize()) {
                     }
                 }
             }
